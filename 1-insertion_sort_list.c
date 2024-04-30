@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <stdlib.h>
 #include "sort.h"
 /**
  * insertion_sort_list - Sorts a doubly linked list of integers
@@ -13,7 +15,7 @@ return;
 curr = (*list)->next;
 {
 listint_t *temp = curr;
-while (temp->prev != NULL && temp->n < temp->prev->n)
+while (temp != NULL && temp->prev != NULL && temp->n < temp->prev->n)
 {
 temp->prev->next = temp->next;
 if (temp->next != NULL)
