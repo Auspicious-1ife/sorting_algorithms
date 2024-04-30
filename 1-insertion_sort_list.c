@@ -9,7 +9,7 @@ if (list == NULL || *list == NULL || (*list)->next == NULL)
 return;
 curr = (*list)->next;
 while (curr != NULL)
-{    
+{
 temp = curr;
 while (temp->prev != NULL && temp->n < temp->prev->n)
 {
